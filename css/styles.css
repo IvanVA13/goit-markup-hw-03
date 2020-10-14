@@ -1,0 +1,261 @@
+/* Основной текст #757575 */
+/* Цвет заголовков #212121 */
+/* Цвет выделения текста #2196F3 */
+/* Второстепенное выделение текста #FFFFFF */
+/* Цвет адреса rgba(255, 255, 255, 0.6) */
+:root {
+  --main-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --second-accent-color: #ffffff;
+  --contacts-footer-color: rgba(255, 255, 255, 0.6);
+  --button-secondary-bg-color: #f5f4fa;
+  --bg-color: #2f303a;
+}
+
+body {
+  color: var(--main-text-color);
+  font-family: Roboto, Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+a {
+  text-decoration: none;
+}
+/* общие стили для списков */
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* общие стили для оформления контейнеров */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* основное оформление логотипа */
+.logo {
+  color: var(--title-text-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+/* Стили для index */
+/* .footer -- временная заливка, чтоб был виден белый текст */
+.footer {
+  background-color: var(--bg-color);
+}
+/* Оформелние панели навигации */
+.nav-link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.contacts-header:hover,
+.contacts-footer:hover,
+.nav-link:focus,
+.contacts-header:focus,
+.contacts-footer:focus {
+  color: var(--accent-color);
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.contacts-header {
+  color: var(--main-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+/* Оформление секции-герой */
+.hero {
+  padding: 200px 452px;
+  margin-bottom: 94px;
+  text-align: center;
+
+  background-color: var(--bg-color);
+}
+/* Оформление заголовка секции-герой */
+.hero-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  color: var(--second-accent-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* Основное оформление кнопки */
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+/* Оформление кнопки в секции-герой */
+.primary {
+  padding: 10px 32px;
+
+  background-color: var(--accent-color);
+  color: var(--second-accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.primary:hover,
+.primary:focus {
+  background-color: var(--second-accent-color);
+  color: var(--accent-color);
+}
+/* Основное оформление секций */
+.section {
+  margin-top: 0px;
+  margin-bottom: 94px;
+}
+/* Основное оформление заголовков секций */
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+/* Основное оформление заголовков */
+.title {
+  color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+/* Оформление заголовков секции особенности компании */
+.title.advantages {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+/* Оформление параграфов описания компании */
+.advantages-list p {
+  margin: 0;
+}
+/* Оформление для секции команда */
+.section.team {
+  margin: 0;
+  background-color: var(--button-secondary-bg-color);
+}
+/* Оформление для контейнера команда */
+.container.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-list {
+  text-align: center;
+}
+.card {
+  width: 270px;
+  height: 368px;
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--second-accent-color);
+}
+/* Оформление заголовков секции команда */
+.title.team {
+  font-weight: 500;
+}
+/* Оформление рода деятельности членов команды */
+.prof {
+  margin: 0px;
+
+  font-size: 16px;
+  line-height: 1.19;
+}
+/* Оформление контейнера в футере */
+.container.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+/* Оформление лого в футере */
+.logo.footer {
+  color: var(--second-accent-color);
+}
+/* Оформление контактов */
+.address {
+  color: var(--second-accent-color);
+  font-style: normal;
+}
+
+.contacts-footer {
+  color: var(--contacts-footer-color);
+}
+
+/* Стили для portfolio */
+
+.header-portfolio {
+  margin-bottom: 94px;
+}
+
+.button-list {
+  margin-bottom: 50px;
+}
+.secondary {
+  border: 0px;
+
+  color: var(--title-text-color);
+  background-color: var(--button-secondary-bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
+.secondary:hover,
+.secondary:focus {
+  border: 0px;
+
+  color: var(--second-accent-color);
+  background-color: var(--accent-color);
+}
+
+.title.portfolio {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.container.portfolio-list {
+  margin-bottom: 94px;
+}
+
+.portfolio {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.87;
+}
