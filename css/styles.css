@@ -11,6 +11,7 @@
   --contacts-footer-color: rgba(255, 255, 255, 0.6);
   --button-secondary-bg-color: #f5f4fa;
   --bg-color: #2f303a;
+  --line-header-color: #ececec;
 }
 
 body {
@@ -62,6 +63,10 @@ a {
   background-color: var(--bg-color);
 }
 /* Оформелние панели навигации */
+.header {
+  border-bottom: 1px solid var(--line-header-color);
+}
+
 .nav-container,
 .site-nav {
   display: flex;
@@ -274,6 +279,10 @@ a {
 }
 /* Оформление лого в футере */
 .footer-logo {
+  margin-bottom: 20px;
+
+  display: block;
+
   color: var(--second-accent-color);
 }
 /* Оформление контактов */
@@ -282,8 +291,21 @@ a {
   font-style: normal;
 }
 
+.location {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+
 .contacts-footer {
+  margin-bottom: 9px;
+
+  display: block;
+
   color: var(--contacts-footer-color);
+}
+
+.tel {
+  margin-bottom: 0;
 }
 
 /* Стили для portfolio */
